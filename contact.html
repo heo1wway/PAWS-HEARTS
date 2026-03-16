@@ -110,20 +110,20 @@
     </div>
 </section>
 
-<section style="background-color: rgb(253,248,244);">
+<section class="py-5 "style="background-color: rgb(253,248,244);">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
-                <form class="contact-form h-100">
+                <form class="contact-form h-100 rounded-5 shadow-sm p-4">
                     <h2>Send Us a Message</h2>
                     <div class="row">
                         <div class="col-md-6">
-                            <label>Full Name</label>
-                            <imput type="text"></imput>
+                            <label for="fullname">Full Name</label>
+                            <input class="form-control px-2 py-1" type="text" id="fullname"></imput>
                         </div>
                         <div class="col-md-6">
-                            <label>Email</label>
-                            <imput class="px-4 py-3" type="email"></imput>
+                            <label for="email">Email</label>
+                            <input class="form-control px-2 py-1" type="email" id="email"></imput>
                         </div>
                         <div class="col-12">
                             <label>Subject</label>
@@ -135,8 +135,11 @@
                                 <option >4</option>
                                 <option >5</option>
                                 <option >6</option>
-
                             </select>
+                        </div>
+                        <div class="col-12">
+                            <label>Message</label>
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
                         </div>
                     </div>
                 </form>
